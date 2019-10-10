@@ -1,8 +1,8 @@
 #include <iostream>
 
 #include "heap.h"
-using namespace std;
 
+using namespace std;
 int main()
 {
     heap<int> h;
