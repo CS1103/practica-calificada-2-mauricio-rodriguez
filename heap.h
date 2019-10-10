@@ -17,7 +17,7 @@ public:
     heap() {
         heapSort(datos);
     }
-    void heapify(heap <T> &v, int n, int i) {
+    void heapify(vector<T>&v, int n, int i) {
         int largo = i;
         int izquierda = 2 * i + 1;
         int derecha = 2 * i + 2;
@@ -32,7 +32,7 @@ public:
             heapify(v, n, largo);
         }
     }
-    void heapSort(heap <T> &v) {
+    void heapSort(vector<T> &v) {
         int n = v.size();
         for (int i = n / 2 - 1; i >= 0; --i) {
             heapify(v, n, i);
